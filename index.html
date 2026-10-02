@@ -1,0 +1,629 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="TeeraTech - AI-powered soil analysis and crop recommendation platform">
+
+    <title>TeeraTech | Smart Soil Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🌱</span>
+            <span>Teera<span class="green">Tech</span></span>
+        </div>
+
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#analyze">Analyze Soil</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+
+        <button class="nav-button" onclick="scrollToAnalysis()">
+            Get Started
+        </button>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                🌾 AI-POWERED SMART AGRICULTURE
+            </p>
+
+
+            <h1>
+                Know Your Soil.
+                <br>
+                <span>Grow Better.</span>
+            </h1>
+
+
+            <p class="hero-text">
+
+                TeeraTech helps farmers understand their soil,
+                discover suitable crops and improve soil health
+                using flexible, intelligent soil analysis.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button class="primary-button"
+                    onclick="scrollToAnalysis()">
+
+                    Analyze My Soil →
+                
+                </button>
+
+
+                <a href="#features" class="secondary-button">
+
+                    Explore Features
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>3+</strong>
+                    <span>Analysis Methods</span>
+                </div>
+
+
+                <div>
+                    <strong>AI</strong>
+                    <span>Powered Insights</span>
+                </div>
+
+
+                <div>
+                    <strong>🌱</strong>
+                    <span>Crop Guidance</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO DASHBOARD -->
+
+        <div class="hero-visual">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-header">
+
+                    <div class="dashboard-icon">
+                        🌱
+                    </div>
+
+                    <div>
+
+                        <small>SOIL HEALTH</small>
+
+                        <h2>
+                            78<span>/100</span>
+                        </h2>
+
+                    </div>
+
+
+                    <span class="good-badge">
+                        GOOD
+                    </span>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div></div>
+
+                </div>
+
+
+                <div class="soil-details">
+
+                    <div>
+                        <small>Soil Type</small>
+                        <strong>Loamy</strong>
+                    </div>
+
+                    <div>
+                        <small>pH Level</small>
+                        <strong>6.5</strong>
+                    </div>
+
+                    <div>
+                        <small>Moisture</small>
+                        <strong>Moderate</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="crop-card">
+
+                    <div class="crop-left">
+
+                        <span>🌾</span>
+
+                        <div>
+
+                            <small>BEST CROP MATCH</small>
+
+                            <strong>Wheat</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <strong class="crop-score">
+                        92%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card">
+
+                <span>💡</span>
+
+                <div>
+
+                    <small>AI INSIGHT</small>
+
+                    <p>
+                        Improve nitrogen availability
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ANALYSIS ================= -->
+
+    <section class="analysis-section" id="analyze">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                HOW IT WORKS
+            </p>
+
+
+            <h2>
+                Analyze your soil
+                <span>your way.</span>
+            </h2>
+
+
+            <p>
+
+                You don't need to provide everything.
+                Choose one method or combine multiple sources
+                for a more comprehensive analysis.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="analysis-cards">
+
+
+            <!-- SOIL TEST -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-icon">
+                    🧪
+                </div>
+
+                <span class="card-number">
+                    01
+                </span>
+
+
+                <h3>
+                    Soil Test
+                </h3>
+
+
+                <p>
+
+                    Enter your laboratory soil-test values
+                    such as pH, Nitrogen, Phosphorus and Potassium.
+
+                </p>
+
+
+                <button onclick="openSoilTest()">
+
+                    Enter Soil Data →
+
+                </button>
+
+            </div>
+
+
+
+            <!-- IMAGE -->
+
+            <div class="analysis-card featured">
+
+                <div class="analysis-icon">
+                    📷
+                </div>
+
+                <span class="card-number">
+                    02
+                </span>
+
+
+                <span class="ai-badge">
+                    AI POWERED
+                </span>
+
+
+                <h3>
+                    Scan Soil
+                </h3>
+
+
+                <p>
+
+                    Upload a clear soil image for
+                    an AI-based preliminary assessment.
+
+                </p>
+
+
+                <button onclick="openImageAnalysis()">
+
+                    Scan Soil →
+
+                </button>
+
+            </div>
+
+
+
+            <!-- QUESTIONS -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-icon">
+                    📝
+                </div>
+
+                <span class="card-number">
+                    03
+                </span>
+
+
+                <h3>
+                    Quick Assessment
+                </h3>
+
+
+                <p>
+
+                    Answer a few simple questions
+                    about your soil and farming conditions.
+
+                </p>
+
+
+                <button onclick="openQuestionnaire()">
+
+                    Start Assessment →
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FLEXIBILITY MESSAGE -->
+
+        <div class="flexibility">
+
+            <span>💡</span>
+
+            <div>
+
+                <strong>
+                    Use what you have.
+                </strong>
+
+                <p>
+
+                    You can use one, two or all three methods.
+                    More information can improve the analysis,
+                    but complete information is never required.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= INPUT AREA ================= -->
+
+        <div id="inputArea" class="input-area">
+
+        </div>
+
+
+
+        <!-- ================= REPORT ================= -->
+
+        <div id="soilReport" class="soil-report">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features-section" id="features">
+
+        <div class="section-heading center">
+
+            <p class="eyebrow">
+                TEERATECH
+            </p>
+
+
+            <h2>
+
+                From soil analysis
+                <span>to smarter farming.</span>
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature-card">
+
+                <span>🔬</span>
+
+                <h3>
+                    Soil Analysis
+                </h3>
+
+                <p>
+                    Understand important soil characteristics.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <span>📊</span>
+
+                <h3>
+                    Soil Health Score
+                </h3>
+
+                <p>
+                    Get an easy-to-understand soil health assessment.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <span>🌾</span>
+
+                <h3>
+                    Crop Matching
+                </h3>
+
+                <p>
+                    Find crops suitable for your soil conditions.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <span>🧪</span>
+
+                <h3>
+                    Soil Improvement
+                </h3>
+
+                <p>
+                    Identify possible soil improvement practices.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <span>📈</span>
+
+                <h3>
+                    Track Progress
+                </h3>
+
+                <p>
+                    Monitor changes in soil health over time.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <span>🤖</span>
+
+                <h3>
+                    AI Insights
+                </h3>
+
+                <p>
+                    Convert available information into useful insights.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta" id="about">
+
+        <div>
+
+            <p class="eyebrow">
+                SMART FARMING STARTS HERE
+            </p>
+
+
+            <h2>
+
+                Your soil has a story.
+                <br>
+
+                <span>Let's understand it.</span>
+
+            </h2>
+
+
+            <p>
+
+                Start with whatever information you have.
+                TeeraTech will help you build a better picture
+                of your soil.
+
+            </p>
+
+
+            <button class="primary-button"
+                onclick="scrollToAnalysis()">
+
+                Start Soil Analysis →
+
+            </button>
+
+        </div>
+
+
+        <div class="big-leaf">
+            🌱
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            🌱
+            <strong>
+                Teera<span>Tech</span>
+            </strong>
+
+        </div>
+
+
+        <p>
+            Smart Soil • Better Crops • Sustainable Farming
+        </p>
+
+
+        <span>
+            © 2026 TeeraTech
+        </span>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

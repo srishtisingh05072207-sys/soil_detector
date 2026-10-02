@@ -1,0 +1,1495 @@
+```css
+/* =====================================================
+   TEERATECH
+   COMPLETE WEBSITE CSS
+===================================================== */
+
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+
+    background: #f7f8f3;
+
+    color: #17251b;
+
+    line-height: 1.6;
+}
+
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= COLORS ================= */
+
+.green {
+    color: #43824b;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    height: 78px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(247, 248, 243, 0.96);
+
+    border-bottom: 1px solid #e3e8df;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 23px;
+
+    font-weight: 700;
+}
+
+
+.logo-icon {
+    font-size: 27px;
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+
+.navbar nav a {
+
+    color: #59645c;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.navbar nav a:hover {
+
+    color: #43824b;
+}
+
+
+.nav-button {
+
+    border: none;
+
+    background: #294f32;
+
+    color: white;
+
+    padding: 11px 21px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.nav-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    min-height: 690px;
+
+    padding: 80px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 25%,
+            #e4f0df,
+            transparent 30%
+        ),
+
+        #f7f8f3;
+}
+
+
+.hero-content {
+
+    max-width: 620px;
+}
+
+
+.eyebrow {
+
+    color: #4c8052;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 6vw, 76px);
+
+    line-height: 1.04;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+
+    color: #4d8752;
+}
+
+
+.hero-text {
+
+    max-width: 550px;
+
+    color: #68736b;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 50px;
+}
+
+
+.primary-button {
+
+    border: none;
+
+    background: #315f38;
+
+    color: white;
+
+    padding: 14px 23px;
+
+    border-radius: 9px;
+
+    font-weight: 600;
+
+    display: inline-block;
+
+    transition: 0.3s;
+}
+
+
+.primary-button:hover {
+
+    background: #254b2b;
+
+    transform: translateY(-2px);
+}
+
+
+.secondary-button {
+
+    border: 1px solid #cdd5ca;
+
+    color: #4e5c52;
+
+    padding: 13px 22px;
+
+    border-radius: 9px;
+
+    font-weight: 600;
+}
+
+
+/* ================= HERO STATS ================= */
+
+.hero-stats {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+
+.hero-stats div {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.hero-stats strong {
+
+    font-size: 20px;
+}
+
+
+.hero-stats span {
+
+    color: #7a847d;
+
+    font-size: 11px;
+}
+
+
+/* ================= HERO VISUAL ================= */
+
+.hero-visual {
+
+    width: 450px;
+
+    position: relative;
+
+    padding: 30px;
+}
+
+
+.dashboard-card {
+
+    background: white;
+
+    border: 1px solid #e2e8df;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+
+        0 25px 70px
+
+        rgba(40, 70, 45, 0.14);
+}
+
+
+.dashboard-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.dashboard-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #e9f2e5;
+
+    border-radius: 15px;
+
+    font-size: 28px;
+}
+
+
+.dashboard-header small {
+
+    color: #89918b;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+.dashboard-header h2 {
+
+    font-size: 31px;
+
+    line-height: 1.2;
+}
+
+
+.dashboard-header h2 span {
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+.good-badge {
+
+    margin-left: auto;
+
+    background: #e7f2e5;
+
+    color: #4e8053;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* ================= PROGRESS ================= */
+
+.progress {
+
+    height: 8px;
+
+    background: #edf0eb;
+
+    border-radius: 10px;
+
+    margin: 25px 0;
+}
+
+
+.progress div {
+
+    width: 78%;
+
+    height: 100%;
+
+    background: #5d9661;
+
+    border-radius: 10px;
+}
+
+
+/* ================= SOIL DETAILS ================= */
+
+.soil-details {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 20px 0;
+
+    border-top: 1px solid #edf0eb;
+
+    border-bottom: 1px solid #edf0eb;
+}
+
+
+.soil-details div {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.soil-details small {
+
+    color: #89918b;
+
+    font-size: 10px;
+}
+
+
+.soil-details strong {
+
+    font-size: 13px;
+
+    margin-top: 4px;
+}
+
+
+/* ================= CROP CARD ================= */
+
+.crop-card {
+
+    padding-top: 22px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.crop-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.crop-left > span {
+
+    font-size: 25px;
+}
+
+
+.crop-left small {
+
+    display: block;
+
+    color: #89918b;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+
+.crop-score {
+
+    color: #4d8752;
+}
+
+
+/* ================= FLOATING CARD ================= */
+
+.floating-card {
+
+    position: absolute;
+
+    right: -10px;
+
+    bottom: 0;
+
+    background: white;
+
+    border: 1px solid #e2e8df;
+
+    border-radius: 14px;
+
+    padding: 14px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    box-shadow:
+
+        0 15px 35px
+
+        rgba(40, 70, 45, 0.12);
+}
+
+
+.floating-card > span {
+
+    font-size: 24px;
+}
+
+
+.floating-card small {
+
+    color: #89918b;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+
+.floating-card p {
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* ================= ANALYSIS ================= */
+
+.analysis-section {
+
+    padding: 100px 7%;
+
+    background: white;
+}
+
+
+.section-heading {
+
+    max-width: 650px;
+
+    margin-bottom: 55px;
+}
+
+
+.section-heading.center {
+
+    text-align: center;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+.section-heading h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 46px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.section-heading h2 span {
+
+    color: #4d8752;
+}
+
+
+.section-heading > p:last-child {
+
+    color: #707a72;
+}
+
+
+/* ================= ANALYSIS CARDS ================= */
+
+.analysis-cards {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.analysis-card {
+
+    position: relative;
+
+    padding: 35px;
+
+    border: 1px solid #e2e8df;
+
+    border-radius: 18px;
+
+    background: #fbfcf9;
+
+    transition: 0.3s;
+}
+
+
+.analysis-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+
+        0 20px 45px
+
+        rgba(40, 67, 45, 0.1);
+}
+
+
+.analysis-card.featured {
+
+    background: #edf5e9;
+
+    border-color: #cfe1ca;
+}
+
+
+.analysis-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: white;
+
+    border-radius: 14px;
+
+    font-size: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.card-number {
+
+    position: absolute;
+
+    right: 25px;
+
+    top: 25px;
+
+    color: #b1b9b1;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.ai-badge {
+
+    position: absolute;
+
+    top: 27px;
+
+    left: 25px;
+
+    transform: translateY(50px);
+
+    color: #4d8752;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.analysis-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+.analysis-card p {
+
+    color: #717b73;
+
+    font-size: 14px;
+
+    min-height: 70px;
+}
+
+
+.analysis-card button {
+
+    border: none;
+
+    background: none;
+
+    color: #3f7545;
+
+    font-weight: 700;
+
+    padding: 0;
+
+    margin-top: 22px;
+}
+
+
+/* ================= FLEXIBILITY ================= */
+
+.flexibility {
+
+    max-width: 800px;
+
+    margin: 50px auto 0;
+
+    padding: 20px 25px;
+
+    display: flex;
+
+    gap: 15px;
+
+    background: #f4f7f1;
+
+    border-radius: 12px;
+}
+
+
+.flexibility > span {
+
+    font-size: 25px;
+}
+
+
+.flexibility strong {
+
+    font-size: 14px;
+}
+
+
+.flexibility p {
+
+    font-size: 12px;
+
+    color: #707970;
+}
+
+
+/* ================= INPUT AREA ================= */
+
+.input-area {
+
+    max-width: 800px;
+
+    margin: 50px auto 0;
+
+    display: none;
+}
+
+
+.input-box {
+
+    background: #f8faf6;
+
+    border: 1px solid #dfe7da;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 15px 40px rgba(40, 70, 45, 0.08);
+}
+
+
+.input-box h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.input-box > p {
+
+    color: #707970;
+
+    margin-bottom: 25px;
+}
+
+
+.input-box label {
+
+    display: block;
+
+    font-weight: 600;
+
+    font-size: 13px;
+
+    margin-top: 17px;
+
+    margin-bottom: 6px;
+}
+
+
+.input-box input,
+.input-box select {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d4ddd0;
+
+    border-radius: 8px;
+
+    background: white;
+
+    outline: none;
+}
+
+
+.input-box input:focus,
+.input-box select:focus {
+
+    border-color: #57915e;
+
+    box-shadow: 0 0 0 3px rgba(87, 145, 94, 0.1);
+}
+
+
+.input-box .primary-button {
+
+    margin-top: 25px;
+}
+
+
+.warning {
+
+    margin-top: 18px;
+
+    padding: 12px;
+
+    background: #fff8e7;
+
+    border-radius: 8px;
+
+    color: #75643d !important;
+
+    font-size: 12px !important;
+}
+
+
+/* ================= IMAGE PREVIEW ================= */
+
+.image-preview {
+
+    display: none;
+
+    max-width: 350px;
+
+    width: 100%;
+
+    max-height: 280px;
+
+    object-fit: cover;
+
+    margin: 20px auto;
+
+    border-radius: 15px;
+
+    border: 2px solid #dce7d8;
+}
+
+
+/* ================= REPORT ================= */
+
+.soil-report {
+
+    display: none;
+
+    max-width: 900px;
+
+    margin: 60px auto 0;
+
+    background: white;
+
+    border: 1px solid #dfe7da;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 55px rgba(40, 70, 45, 0.1);
+}
+
+
+.report-header {
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: #edf5e9;
+}
+
+
+.report-header p {
+
+    font-size: 10px;
+
+    color: #4d8752;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.report-header h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    margin: 8px 0;
+}
+
+
+.health-score {
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    color: #3f7545;
+}
+
+
+.health-score span {
+
+    font-size: 18px;
+
+    color: #7d897e;
+}
+
+
+.confidence {
+
+    padding: 22px 35px;
+
+    border-bottom: 1px solid #edf0eb;
+
+    font-size: 13px;
+}
+
+
+.confidence-bar {
+
+    height: 7px;
+
+    background: #edf0eb;
+
+    margin-top: 9px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.confidence-bar div {
+
+    height: 100%;
+
+    background: #5d9661;
+
+    border-radius: 10px;
+}
+
+
+.report-grid {
+
+    padding: 30px 35px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.report-item {
+
+    background: #f7f9f5;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.report-item span {
+
+    font-size: 10px;
+
+    color: #89918b;
+}
+
+
+.report-item strong {
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+
+/* ================= CROP RESULTS ================= */
+
+.crop-results {
+
+    padding: 0 35px 30px;
+}
+
+
+.crop-results h3,
+.improvement h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+}
+
+
+.crop-result {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 18px;
+
+    background: #f7f9f5;
+
+    border-radius: 9px;
+
+    margin-bottom: 8px;
+}
+
+
+.crop-result span {
+
+    color: #43824b;
+
+    font-weight: 700;
+}
+
+
+/* ================= IMPROVEMENT ================= */
+
+.improvement {
+
+    padding: 30px 35px;
+
+    background: #f4f7f1;
+}
+
+
+.improvement ul {
+
+    padding-left: 20px;
+}
+
+
+.improvement li {
+
+    color: #5e695f;
+
+    font-size: 13px;
+
+    margin-bottom: 9px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features-section {
+
+    padding: 100px 7%;
+
+    background: #f4f6f0;
+}
+
+
+.feature-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.feature-card {
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e3e9df;
+}
+
+
+.feature-card > span {
+
+    font-size: 28px;
+}
+
+
+.feature-card h3 {
+
+    margin: 15px 0 7px;
+
+    font-size: 17px;
+}
+
+
+.feature-card p {
+
+    color: #737c75;
+
+    font-size: 13px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+
+    margin: 80px 7%;
+
+    padding: 65px 7%;
+
+    border-radius: 25px;
+
+    background: #e6f0e1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.cta h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+}
+
+
+.cta h2 span {
+
+    color: #4d8752;
+}
+
+
+.cta p {
+
+    max-width: 520px;
+
+    color: #69756b;
+
+    margin-bottom: 25px;
+}
+
+
+.big-leaf {
+
+    font-size: 150px;
+
+    opacity: 0.8;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    padding: 35px 7%;
+
+    background: #17251b;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.footer-logo {
+
+    display: flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+    font-size: 21px;
+}
+
+
+.footer-logo span {
+
+    color: #74a879;
+}
+
+
+footer p {
+
+    color: #aeb8ae;
+
+    font-size: 12px;
+}
+
+
+footer > span {
+
+    color: #8f9a91;
+
+    font-size: 11px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+
+    .hero-text {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-buttons,
+    .hero-stats {
+
+        justify-content: center;
+    }
+
+
+    .hero-visual {
+
+        width: min(450px, 100%);
+    }
+
+
+    .analysis-cards,
+    .feature-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+    }
+
+
+    .cta {
+
+        text-align: center;
+    }
+
+
+    .cta p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .big-leaf {
+
+        display: none;
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+
+        padding: 0 5%;
+    }
+
+
+    .nav-button {
+
+        display: none;
+    }
+
+
+    .hero {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .hero h1 {
+
+        font-size: 48px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+    }
+
+
+    .hero-stats {
+
+        gap: 18px;
+    }
+
+
+    .dashboard-card {
+
+        padding: 22px;
+    }
+
+
+    .floating-card {
+
+        right: -3px;
+    }
+
+
+    .section-heading h2,
+    .cta h2 {
+
+        font-size: 35px;
+    }
+
+
+    .analysis-section,
+    .features-section {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .report-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .input-box {
+
+        padding: 25px;
+    }
+
+}
+```
